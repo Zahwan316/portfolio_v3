@@ -1,0 +1,37 @@
+:root{
+    --primary:#82AAE3;
+    --secondary:#91D8E4;
+    --third:#BFEAF5;
+    --fourth:#EAFDFC;
+}
+
+@font-face {
+    font-family: mainfont;
+    src: url("../../public/asset/font/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: mainfontBold;
+    src: url(../../public/asset/font/Poppins/Poppins-Bold.ttf);
+}
+
+.font1{
+    font-family:mainfont;
+}
+
+.font1bold{
+    font-family: mainfontBold;
+}
+
+.card-hover{
+    filter:grayscale(1);
+    transition:0.4s
+}
+
+.card-hover:hover{
+    filter:grayscale(0)
+}
+
+i{
+    cursor:pointer
+}
