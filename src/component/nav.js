@@ -16,7 +16,7 @@ const NavComponent = () => {
         <div>
           
            
-         <nav class="navbar navbar-expand navbar-light bg-light d-flex justify-content-evenly border-bottom border-dark-subtle">
+         <nav class="navbar navbar-expand navbar-light bg-light d-flex justify-content-evenly border-bottom border-dark-subtle" style={{height:"7vh"}}>
             <a href='' class='navbar-brand' >Skyl</a>
             <ul class="nav navbar-nav">
                  <li class="nav-item">

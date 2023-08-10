@@ -19,14 +19,30 @@ const ProjectContent = () => {
         <main>
               <div className='container-fluid mt-4' style={{width:"60%",height:"80vh"}}>
 
-                <div className='d-flex align-items-center flex-column mb-5'>
-                    <h2 className='mb-2'>Project</h2>
+                <div className='d-flex align-items-center flex-column mb-5 btn-outline-primary'>
+                    <h2 className='mb-4'>Project</h2>
                     <div className="btn-group" role="group" aria-label="Basic radio toggle button group">
-                        <input type="radio" className="btn-check" btnfor='web' b name="btnradio" id="btnradio1" autocomplete="off" checked onClick={handleClickMenu} />
-                        <label className="btn btn-outline-dark" for="btnradio1">Web</label>
+                        <input 
+                            type="radio" 
+                            className="btn-check btn-outline-primary"
+                            btnfor='web' 
+                            name="btnradio" 
+                            id="btnradio1"
+                            autocomplete="off" 
+                            checked={data === web}
+                            onClick={handleClickMenu} />
+                        <label className="btn btn-outline-primary" for="btnradio1">Web</label>
 
-                        <input type="radio" className="btn-check" btnfor='game'  name="btnradio" id="btnradio2" autocomplete="off" onClick={handleClickMenu} />
-                        <label className="btn btn-outline-dark" for="btnradio2">Game</label>
+                        <input 
+                            type="radio" 
+                            className="btn-check btn-outline-primary" 
+                            btnfor='game'  
+                            name="btnradio" 
+                            id="btnradio2" 
+                            autocomplete="off" 
+                            checked={data === game}
+                            onClick={handleClickMenu} />
+                        <label className="btn btn-outline-primary" for="btnradio2">Game</label>
 
                       
                     </div>

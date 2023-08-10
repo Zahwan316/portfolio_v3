@@ -12,8 +12,8 @@ const BoxSkill = (props) => {
     })
 
     return(
-        <div class='card border border-dark p-3 card-hover' style={{width:props.width,height:props.height}}>
-            <div className='w-100 mb-2' style={{height:props.imgheight}}>
+        <div class='card border border-dark p-3 ' style={{width:props.width,height:props.height}}>
+            <div className={`w-100 ${props.page === "project"?"mb-4":"mb-2"}`} style={{height:props.imgheight}}>
                 <img src={props.img} style={{width:"100%",height:"100%"}}></img>
             </div>
             <div className={`w-100 d-flex justify-content-center ${props.page == "skill" && "align-items-center"}`} style={{height:props.heightext}}>
@@ -21,8 +21,8 @@ const BoxSkill = (props) => {
                 {
                     props.page == "project" &&
                     <div className='w-100 d-flex flex-column '>
-                        <div className='d-flex justify-content-between'>
-                            <h4>{props.judul}</h4>
+                        <div className='d-flex justify-content-between mb-2'>
+                            <h4 >{props.judul}</h4>
                             <div className="d-flex align-items-center" style={{}}>
                                 <i className="fa-solid fa-code mx-3" onClick={() => handleLinkGithub(props.github)}></i>
                                 <i className="fa-solid fa-up-right-from-square"></i>
