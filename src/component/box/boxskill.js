@@ -13,8 +13,8 @@ const BoxSkill = (props) => {
 
     return(
         <div class='card border border-dark p-3 ' style={{width:props.width,height:props.height}}>
-            <div className={`w-100 ${props.page === "project"?"mb-4":"mb-2"}`} style={{height:props.imgheight}}>
-                <img src={props.img} style={{width:"100%",height:"100%"}}></img>
+            <div className={`w-100  ${props.page === "project"?"mb-4":"mb-2"}`} style={{height:props.imgheight}}>
+                <img src={props.img}  style={{width:"100%",height:"100%",borderRadius:"8px"}}></img>
             </div>
             <div className={`w-100 d-flex justify-content-center ${props.page == "skill" && "align-items-center"}`} style={{height:props.heightext}}>
                 <p className='text-center'>{props.text}</p>
@@ -28,7 +28,7 @@ const BoxSkill = (props) => {
                                 <i className="fa-solid fa-up-right-from-square"></i>
                             </div>
                         </div>
-                        <div  style={{height:"60%"}}>
+                        <div  style={{height:"60%"}} >
                             <p className='text-secondary'>{props.main}</p>
 
                         </div>

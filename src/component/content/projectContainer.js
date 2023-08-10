@@ -16,8 +16,8 @@ const ProjectContent = () => {
     }
 
     return(
-        <main>
-              <div className='container-fluid mt-4' style={{width:"60%",height:"80vh"}}>
+        <main className='d-flex justify-content-center'>
+              <div className=' d-flex justify-content-center align-items-center flex-column mt-4 px-4' style={{width:"60%",minheight:"80vh"}}>
 
                 <div className='d-flex align-items-center flex-column mb-5 btn-outline-primary'>
                     <h2 className='mb-4'>Project</h2>
@@ -47,10 +47,14 @@ const ProjectContent = () => {
                       
                     </div>
                 </div>
-                <div className=' d-flex flex-wrap justify-content-center' style={{minHeight:"20%",gap:"20px"}}>
+                <div className=' d-flex flex-wrap justify-content-center w-100' style={{minHeight:"20%",gap:"3em"}}>
                     {
                         data.map((items,index) => 
-                        <BoxSkill width="40%" height="60vh" imgheight="40%" page='project' heightext="50%" main={items.text} judul={items.judul} img={items.img} tech={items.tech} github={items.link}  />
+                        <div className='row'>
+                            <div className='col-sm-4 w-100'>
+                                 <BoxSkill width="20vw" height="50vh" imgheight="40%" page='project' heightext="50%" main={items.text} judul={items.judul} img={items.img} tech={items.tech} github={items.link}  />
+                            </div>
+                        </div>
                         )
                     }
                    

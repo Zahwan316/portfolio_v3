@@ -13,6 +13,20 @@ const web = [
         "tech":["asset/img/javascript.png","asset/img/php4.png","asset/img/css.png"],
         "link" : "https://github.com/Zahwan316/poin_siswa"
     },
+    {
+        "img":"asset/img/login.png",
+        "judul":"Website Poin SIswa",
+        "text":"WebApp to record student violations",
+        "tech":["asset/img/javascript.png","asset/img/php4.png","asset/img/css.png"],
+        "link" : "https://github.com/Zahwan316/poin_siswa"
+    },
+    {
+        "img":"asset/img/login.png",
+        "judul":"Website Poin SIswa",
+        "text":"WebApp to record student violations",
+        "tech":["asset/img/javascript.png","asset/img/php4.png","asset/img/css.png"],
+        "link" : "https://github.com/Zahwan316/poin_siswa"
+    },
 ]
 
 export const game = [
